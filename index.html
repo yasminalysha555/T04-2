@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Appliance Energy</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -19,25 +18,23 @@
       </ul>
     </nav>
   </header>
+  
   <h1>Appliance Energy Consumption</h1>
   <div id="content"></div>
-  <!--Give the SVG a size so shapes can be seen-->
-  <svg width="300" height="150"></svg>
-  <!-- Load D3 first, then your D3 code file -->
-  
 
-  <!-- Content -->
-  <main>
-    <h1>Welcome to Appliance Energy Consumption</h1>
-    <p>This website provides insights into energy usage of common household appliances in the Australian market.</p>
-  </main>
+  <!-- NEW: Container for T04-3 chart -->
+  <div class="responsive-svg-container"></div>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Yasmin Alysha Binti Kushahrin | Built with HTML, CSS, JavaScript | GenAI used: ChatGPT/GitHub Copilot</p>
   </footer>
 
+  <!-- D3 library -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="energy-d3.js"></script>
+  <!-- NEW: JS for T04-3 -->
+  <script src="t04-3-bars.js"></script>
+  <!-- Old demo script (disabled for now) -->
+  <!-- <script src="energy-d3.js"></script> -->
 </body>
 </html>
